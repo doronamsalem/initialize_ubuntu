@@ -14,6 +14,8 @@ alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push'
 alias gs='git status'
+alias gb='git branch'
+alias gch="git checkout"
   #auto git add, commit, push script
   lazyManWork=$(find $PATH_INITIALIZE_UBUNTU -type f -name git_shortcut.sh)
   alias gitit='source ${lazyManWork}'
