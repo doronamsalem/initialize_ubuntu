@@ -1,8 +1,12 @@
-# necceries softwares and apps installation
+# To activate in the next shell session execute:
+# sed -i 's/export first_initialize=false/export first_initialize=true/' $COUSTOM_CONFIGURATION_DIR/main.sh
+
 #!bin/bash
-if ${first_initialize}
+if $first_initialize
 then
-    softwares=("helm", "kubectl")
+    sed -i 's/export first_initialize=true/export first_initialize=false/' $COUSTOM_CONFIGURATION_DIR/main.sh
+    
+    softwares=("helm", "kubectl", "docker")
     apps=("vscode", "whatsapp", "telegram", "google chrome", "zoom")
     echo -e "intallations file path" `pwd` "\n"
 
@@ -24,7 +28,9 @@ then
             curl -LO "https://dl.k8s.io/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
             echo "$(cat kubectl.sha256)  kubectl" | sha256sum --check
             sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
-        #
+        #docker
+            sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
     fi
 
     echo -ne "Do you want to install:\n${apps[@]}\n[y/n]\n"
