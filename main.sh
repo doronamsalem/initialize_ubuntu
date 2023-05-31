@@ -7,6 +7,9 @@
 export first_initialize=false
 
 #useful aliases
+alias myaliases='grep "alias" ~/Desktop/initialize_ubuntu/main.sh'
+alias vpn='f5fpc -s -t wwvpn.rafael.co.il -u dorona3 -p 211000Dd'
+alias vpnout='f5fpc -o'
 alias c='clear'
 alias s='sudo'
 alias k='kubectl'
@@ -18,6 +21,8 @@ alias gp='git push'
 alias gs='git status'
 alias gb='git branch'
 alias gch="git checkout"
+alias gitlog="git log --oneline"
+alias reset='git reset HEAD~1'
   #auto git add, commit, push script
   lazyManWork=$(find $COUSTOM_CONFIGURATION_DIR -type f -name git_shortcut.sh)
   alias gitit='source ${lazyManWork}'
