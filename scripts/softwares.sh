@@ -5,9 +5,9 @@
 if $first_initialize
 then
     sed -i 's/export first_initialize=true/export first_initialize=false/' $COUSTOM_CONFIGURATION_DIR/main.sh
-    
-    softwares=("helm", "kubectl", "docker", "python3", "ansible", "terraform)
-    apps=("vscode", "whatsapp", "telegram", "google chrome", "zoom")
+
+    softwares=("helm" "kubectl" "docker" "python3" "ansible" "terraform")
+    apps=("vscode" "whatsapp" "telegram" "google chrome" "zoom")
     echo -e "intallations file path" `pwd` "\n"
 
     echo -ne "Do you want to install:\n${softwares[@]}\n[y/n]\n"
