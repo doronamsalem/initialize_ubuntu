@@ -45,17 +45,17 @@ then
     if [[ "$confermation" == "y" || "$confermation" == "Y" ]]
     then
         #vscode
-            sudo snap install --classic code -y
+            sudo snap install --classic code
         #whatsapp
-            sudo snap install whatsapp-for-linux -y
+            sudo snap install whatsapp-for-linux
         #telegram
-            sudo snap install telegram-desktop -y
+            sudo snap install telegram-desktop
         #google chrome
             wget -O /tmp/google-chrome-stable_current_amd64.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-            sudo apt install /tmp/google-chrome-stable_current_amd64.deb -y
+            sudo apt install /tmp/google-chrome-stable_current_amd64.deb
         #zoom
             wget -O /tmp/zoom_amd64.deb https://zoom.us/client/5.13.10.1208/zoom_amd64.deb
-            sudo apt install /tmp/zoom_amd64.deb -y
+            sudo apt install /tmp/zoom_amd64.deb
         #
     fi
 fi
