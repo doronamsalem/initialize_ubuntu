@@ -1,5 +1,6 @@
 # For first activation, execute:
 # 1. echo -e '\n#my changes \nexport COUSTOM_CONFIGURATION_DIR=<permenent/path/to/initialize_ubuntu/dir> \nsource $COUSTOM_CONFIGURATION_DIR/main.sh' >> ~/.bashrc
+#    change: <permenent/path/to/initialize_ubuntu/dir>
 # 2. set first_initialize=true
 # 3. start new shell session
 
