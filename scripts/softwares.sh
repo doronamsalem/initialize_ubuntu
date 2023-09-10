@@ -2,6 +2,7 @@
 # Execute the following foe activate the script in the next shell session:
 # sed -i 's/export first_initialize=false/export first_initialize=true/' $COUSTOM_CONFIGURATION_DIR/main.sh
 
+test git submodules
 #!bin/bash
 if $first_initialize
 then
