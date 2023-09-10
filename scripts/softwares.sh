@@ -1,4 +1,5 @@
-# To activate in the next shell session execute:
+# Installation of necessary softwers and apps
+# Execute the following foe activate the script in the next shell session:
 # sed -i 's/export first_initialize=false/export first_initialize=true/' $COUSTOM_CONFIGURATION_DIR/main.sh
 
 #!bin/bash
