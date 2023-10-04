@@ -24,6 +24,7 @@ alias gch="git checkout"
 alias gitlog="git log --oneline"
 alias reset='git reset HEAD~1'
 alias clone="git clone"
+alias pull="git pull"
   #auto git add, commit, push script
   lazyManWork=$(find $COUSTOM_CONFIGURATION_DIR -type f -name git_shortcut.sh)
   alias gitit='source ${lazyManWork}'
