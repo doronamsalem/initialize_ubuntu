@@ -13,6 +13,7 @@ alias vpnout='f5fpc -o'
 alias c='clear'
 alias s='sudo'
 alias k='kubectl'
+alias vpninfo='f5fpc --info'
 
 #git shortcut
 alias ga='git add'
