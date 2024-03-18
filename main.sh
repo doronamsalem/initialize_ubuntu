@@ -8,12 +8,10 @@
 export first_initialize=false
 
 #useful aliases
-alias vpn='f5fpc -s -t wwvpn.rafael.co.il -u dorona3 -p Docker123!'
 alias vpnout='f5fpc -o'
 alias c='clear'
 alias s='sudo'
 alias k='kubectl'
-alias vpninfo='f5fpc --info'
 
 #git shortcut
 alias ga='git add'
