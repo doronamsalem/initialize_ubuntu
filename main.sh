@@ -10,10 +10,12 @@ export first_initialize=false
 #useful aliases
 alias vpnout='f5fpc -o'
 alias c='clear'
-alias s='sudo'
 alias k='kubectl'
+alias context='kubectl config use-context'
+alias namespace='kubectl config set-context --current --namespace'
+alias get-contexts='kubectl config get-contexts'
 
-#git shortcut
+# git shortcut
 alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push'
@@ -24,14 +26,14 @@ alias gitlog="git log --oneline"
 alias reset='git reset HEAD~1'
 alias clone="git clone"
 alias pull="git pull"
-  #auto git add, commit, push script
+  # auto git add, commit, push script
   lazyManWork=$(find $COUSTOM_CONFIGURATION_DIR -type f -name git_shortcut.sh)
   alias gitit='source ${lazyManWork}'
 
-#change layout script bind to f10 key
+# change layout script bind to f10 key
 changeLayout=$(find $COUSTOM_CONFIGURATION_DIR -type f -name change_layout.sh)
 bind '"\e[21~":"source ${changeLayout}\n"'
 
-#softwares installations
+# softwares installations
 softwares_installations=$(find $COUSTOM_CONFIGURATION_DIR -type f -name softwares.sh)
 source ${softwares_installations}
